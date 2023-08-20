@@ -1,0 +1,5 @@
+{'1. Position': {'X': 0, 'Y': 0, 'R': 0}, '2. Position': {'X': 0, 'Y': 0, 'R': 1360}}
+{'G1. Position': 10}
+['1. Position', 'Gripper open', '2. Position']
+[{'X': 0, 'Y': 0, 'R': 0}, 0, {'X': 0, 'Y': 0, 'R': 1360}]
+["1. Position {'X': 0, 'Y': 0, 'R': 0}", 'Gripper open 0', "2. Position {'X': 0, 'Y': 0, 'R': 1360}"]

@@ -1,0 +1,5 @@
+{'1. Position': {'X': 0, 'Y': 0, 'R': 0}, '2. Position': {'X': 48, 'Y': 0, 'R': 272}, '3. Position': {'X': 48, 'Y': 1969, 'R': 272}, '4. Position': {'X': 48, 'Y': 761, 'R': 272}, '5. Position': {'X': 31, 'Y': 761, 'R': 1053}, '6. Position': {'X': 30, 'Y': 1860, 'R': 1053}}
+{'G1. Position': 13}
+['1. Position', 'Gripper open', '2. Position', '3. Position', 'G1. Position', '4. Position', '5. Position', '6. Position', 'Gripper open']
+[{'X': 0, 'Y': 0, 'R': 0}, 0, {'X': 48, 'Y': 0, 'R': 272}, {'X': 48, 'Y': 1969, 'R': 272}, 13, {'X': 48, 'Y': 761, 'R': 272}, {'X': 31, 'Y': 761, 'R': 1053}, {'X': 30, 'Y': 1860, 'R': 1053}, 0]
+["1. Position {'X': 0, 'Y': 0, 'R': 0}", 'Gripper open 0', "2. Position {'X': 48, 'Y': 0, 'R': 272}", "3. Position {'X': 48, 'Y': 1969, 'R': 272}", 'G1. Position 13', "4. Position {'X': 48, 'Y': 761, 'R': 272}", "5. Position {'X': 31, 'Y': 761, 'R': 1053}", "6. Position {'X': 30, 'Y': 1860, 'R': 1053}", 'Gripper open 0']
