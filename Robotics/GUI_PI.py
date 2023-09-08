@@ -22,13 +22,13 @@ class GUI_motor_position():
         
         # Images are located in a subfolder in the Fisher robotics.py folder
  
-        image_homing = './ButtonGraphics/home_2.png'
+        # image_homing = './ButtonGraphics/home_2.png'
         image_close = './ButtonGraphics/agt_action_fail_256.png'
 
         image_teach1 = './ButtonGraphics/Fisher_robotics.png'
 
 
-        image_homing1 = './ButtonGraphics/search1.png'
+        # image_homing1 = './ButtonGraphics/search1.png'
         image_homing2 = './ButtonGraphics/search.png'
 
         image_arrow_left = './ButtonGraphics/arrow_left.png'
@@ -205,7 +205,7 @@ class GUI_robot_control():
         sg.SetOptions(auto_size_buttons=True, margins=(0,0), button_color=sg.COLOR_SYSTEM_DEFAULT)
 
         # Images are located in a subfolder in the Fisher robotics.py folder
-        image_new = './ButtonGraphics/tab_new_r.png'
+        # image_new = './ButtonGraphics/tab_new_r.png'
         image_open = './ButtonGraphics/folder_yellow_open.png'
         image_save = './ButtonGraphics/save.png'
 
@@ -215,30 +215,30 @@ class GUI_robot_control():
         image_scycle = './ButtonGraphics/arrow_down_1.png'
         image_continuously = './ButtonGraphics/arrow_circle_down.png'
 
-        image_homing = './ButtonGraphics/home_2.png'
+        # image_homing = './ButtonGraphics/home_2.png'
         image_teach = './ButtonGraphics/industrial_robot (2).png'
 
         image_enter_position = './ButtonGraphics/03_robot.png'
         image_enter_gposition = './ButtonGraphics/06_robot.png'
         image_delete_position = './ButtonGraphics/hitchhikeguidetogalaxy1_close.png'
 
-        image_teach1 = './ButtonGraphics/Fisher_robotics.png'
+        # image_teach1 = './ButtonGraphics/Fisher_robotics.png'
 
 
         image_homing1 = './ButtonGraphics/search1.png'
-        image_homing2 = './ButtonGraphics/search.png'
+        # image_homing2 = './ButtonGraphics/search.png'
 
-        image_arrow_left = './ButtonGraphics/arrow_left.png'
-        image_arrow_right = './ButtonGraphics/arrow_right.png'
+        # image_arrow_left = './ButtonGraphics/arrow_left.png'
+        # image_arrow_right = './ButtonGraphics/arrow_right.png'
 
-        image_arrow_up = './ButtonGraphics/arrow_up.png'
-        image_arrow_down = './ButtonGraphics/arrow_down (2).png'
+        # image_arrow_up = './ButtonGraphics/arrow_up.png'
+        # image_arrow_down = './ButtonGraphics/arrow_down (2).png'
 
-        image_arrow_forward = './ButtonGraphics/forward_2.png'
-        image_arrow_back = './ButtonGraphics/back_2.png'
+        # image_arrow_forward = './ButtonGraphics/forward_2.png'
+        # image_arrow_back = './ButtonGraphics/back_2.png'
 
         image_gripper_open = './ButtonGraphics/rightleft2red.png'
-        image_gripper_close = './ButtonGraphics/rightleft2red_r01.png'
+        # image_gripper_close = './ButtonGraphics/rightleft2red_r01.png'
 
         # ------ Menu Definition ------ #      
         menu_def = [['&File', ['&Open','Save &as','---', 'E&xit' ]],['&Edit', ['&Undo','---','C&ut','&Copy','&Paste']],['&Run', ['&Homing', '&Teach Positions', '---', 'R&un single line', '&Run single cycle','Run &continuously']],['&Help', '&About...'],]  
