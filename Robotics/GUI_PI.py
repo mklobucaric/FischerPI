@@ -252,20 +252,20 @@ class GUI_robot_control():
                             
                             sg.VerticalSeparator(pad=(0,0)),
                             
-                            sg.Button('', image_filename=image_single,image_size=(40, 40), image_subsample=1, 
+                            sg.Button('', image_filename=image_single,image_size=(40, 40), image_subsample=5, 
                                       button_color=('black', sg.COLOR_SYSTEM_DEFAULT), pad=(0, 0), 
                                       key='_run_single_line_'),
-                            sg.Button('', image_filename=image_scycle,image_size=(40, 40), image_subsample=1, 
+                            sg.Button('', image_filename=image_scycle,image_size=(40, 40), image_subsample=5, 
                                       button_color=('black', sg.COLOR_SYSTEM_DEFAULT), pad=(0, 0), 
                                       key='_run_single_cycle_'),
-                            sg.Button('', image_filename=image_continuously,image_size=(40, 40), image_subsample=1, 
+                            sg.Button('', image_filename=image_continuously,image_size=(40, 40), image_subsample=5, 
                                       button_color=('black', sg.COLOR_SYSTEM_DEFAULT), pad=(0, 0), 
                                       key='_run_continuously_'),
                             sg.VerticalSeparator(pad=(0,0)),
                             
-                            sg.Button('', image_filename=image_homing1,image_size=(40, 40), image_subsample=1, 
+                            sg.Button('', image_filename=image_homing1,image_size=(40, 40), image_subsample=5, 
                                       button_color=('black', sg.COLOR_SYSTEM_DEFAULT), pad=(0, 0), key='_homing_'),
-                            sg.Button('', image_filename=image_teach,image_size=(40, 40), image_subsample=1, 
+                            sg.Button('', image_filename=image_teach,image_size=(40, 40), image_subsample=5, 
                                       button_color=('black', sg.COLOR_SYSTEM_DEFAULT), pad=(0, 0), key='_teach_position_'),
                             ]]
 
