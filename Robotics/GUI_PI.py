@@ -4,8 +4,31 @@ import time
 
 
 class GUI_motor_position():
+
+    """
+    Class for creating GUI to teach motor positions.
+    """
+
     def __init__(self,motor_X_axis,motor_Y_axis,motor_rotation,motor_gripper,position_dict,gripper_dict,command_list_keys,command_list_values,
                  command_list_items,position_combo,gripper_combo):
+
+        """
+        Initialize the GUI_motor_position class.
+        
+        Args:
+            motor_X_axis (Motors.DCMotor): Instance of the DCMotor class for the X-axis motor.
+            motor_Y_axis (Motors.DCMotor): Instance of the DCMotor class for the Y-axis motor.
+            motor_rotation (Motors.DCMotor): Instance of the DCMotor class for the rotation motor.
+            motor_gripper (Motors.DCMotor): Instance of the DCMotor class for the gripper motor.
+            position_dict (dict): Dictionary to store motor positions.
+            gripper_dict (dict): Dictionary to store gripper positions.
+            command_list_keys (list): List to store command keys.
+            command_list_values (list): List to store command values.
+            command_list_items (list): List to store command items.
+            position_combo (list): List of position names for the dropdown menu.
+            gripper_combo (list): List of gripper position names for the dropdown menu.
+        """       
+
         self.motor_X_axis = motor_X_axis
         self.motor_Y_axis = motor_Y_axis
         self.motor_rotation = motor_rotation
@@ -18,17 +41,10 @@ class GUI_motor_position():
         self.position_combo = position_combo
         self.gripper_combo = gripper_combo
         
-        
-        
-        # Images are located in a subfolder in the Fisher robotics.py folder
- 
-        # image_homing = './ButtonGraphics/home_2.png'
         image_close = './ButtonGraphics/agt_action_fail_256.png'
 
         image_teach1 = './ButtonGraphics/Fisher_robotics.png'
 
-
-        # image_homing1 = './ButtonGraphics/search1.png'
         image_homing2 = './ButtonGraphics/search.png'
 
         image_arrow_left = './ButtonGraphics/arrow_left.png'
@@ -179,7 +195,24 @@ class GUI_motor_position():
 
 
 class GUI_robot_control():
+
+    """
+    Class for creating the main GUI for robot control.
+    """
+
     def __init__(self,motor_X_axis,motor_Y_axis,motor_rotation,motor_gripper,stopButton_pin,callback_func):
+
+        """
+        Initialize the GUI_robot_control class.
+        
+        Args:
+            motor_X_axis (Motors.DCMotor): Instance of the DCMotor class for the X-axis motor.
+            motor_Y_axis (Motors.DCMotor): Instance of the DCMotor class for the Y-axis motor.
+            motor_rotation (Motors.DCMotor): Instance of the DCMotor class for the rotation motor.
+            motor_gripper (Motors.DCMotor): Instance of the DCMotor class for the gripper motor.
+            stopButton_pin (int): The GPIO pin number of the stop button.
+            callback_func (function): The callback function to be executed when the stop button is pressed.
+        """
 
                
         self.motor_X_axis = motor_X_axis
@@ -204,8 +237,6 @@ class GUI_robot_control():
   
         sg.SetOptions(auto_size_buttons=True, margins=(0,0), button_color=sg.COLOR_SYSTEM_DEFAULT)
 
-        # Images are located in a subfolder in the Fisher robotics.py folder
-        # image_new = './ButtonGraphics/tab_new_r.png'
         image_open = './ButtonGraphics/folder_yellow_open.png'
         image_save = './ButtonGraphics/save.png'
 
@@ -215,30 +246,15 @@ class GUI_robot_control():
         image_scycle = './ButtonGraphics/arrow_down_1.png'
         image_continuously = './ButtonGraphics/arrow_circle_down.png'
 
-        # image_homing = './ButtonGraphics/home_2.png'
         image_teach = './ButtonGraphics/industrial_robot (2).png'
 
         image_enter_position = './ButtonGraphics/03_robot.png'
         image_enter_gposition = './ButtonGraphics/06_robot.png'
         image_delete_position = './ButtonGraphics/hitchhikeguidetogalaxy1_close.png'
 
-        # image_teach1 = './ButtonGraphics/Fisher_robotics.png'
-
-
         image_homing1 = './ButtonGraphics/search1.png'
-        # image_homing2 = './ButtonGraphics/search.png'
-
-        # image_arrow_left = './ButtonGraphics/arrow_left.png'
-        # image_arrow_right = './ButtonGraphics/arrow_right.png'
-
-        # image_arrow_up = './ButtonGraphics/arrow_up.png'
-        # image_arrow_down = './ButtonGraphics/arrow_down (2).png'
-
-        # image_arrow_forward = './ButtonGraphics/forward_2.png'
-        # image_arrow_back = './ButtonGraphics/back_2.png'
-
+ 
         image_gripper_open = './ButtonGraphics/rightleft2red.png'
-        # image_gripper_close = './ButtonGraphics/rightleft2red_r01.png'
 
         # ------ Menu Definition ------ #      
         menu_def = [['&File', ['&Open','Save &as','---', 'E&xit' ]],['&Edit', ['&Undo','---','C&ut','&Copy','&Paste']],['&Run', ['&Homing', '&Teach Positions', '---', 'R&un single line', '&Run single cycle','Run &continuously']],['&Help', '&About...'],]  
@@ -314,7 +330,6 @@ class GUI_robot_control():
         layout = [[sg.Menu(menu_def, )], 
                 [sg.Frame('', toolbar_buttons,title_color='white', background_color=sg.COLOR_SYSTEM_DEFAULT, pad=(0,0))],
                 [sg.Listbox(values=[''], size=(43,29),pad=(0,0),key = '_list_box_', enable_events = True), sg.Column(col)],
-                #[sg.Output(size=(60, 20),key='_output_'), sg.Column(col)],
 
                 [sg.Text('Status Bar', relief=sg.RELIEF_SUNKEN, size=(80, 1), pad=(0, 1), key='_status1_')]
                 ]      
@@ -353,8 +368,7 @@ class GUI_robot_control():
             if coordinate['Y'] <= 50:
                 self.motor_Y_axis.homing()
             elif abs(coordinate['Y']-self.motor_Y_axis.counter) > 50:
-    #            if coordinate['Y'] >= 1300:
-    #                coordinate['Y'] = 1300
+
                 if coordinate['Y'] >= 2200:
                     coordinate['Y'] = 2200
                 self.motor_Y_axis.go_to_position(coordinate['Y'])
@@ -363,12 +377,11 @@ class GUI_robot_control():
             if coordinate['R'] <= 50:
                 self.motor_rotation.homing()
             elif abs(coordinate['R']-self.motor_rotation.counter) > 100:
-    #            if coordinate['R'] >=1150:
-    #                coordinate['R'] = 1150
+
                 if coordinate['R'] >=2300:
                     coordinate['R'] = 2300
                 self.motor_rotation.go_to_position(coordinate['R'])
-    #            print(coordinate['R'])
+
             else:
                 pass
        
@@ -423,13 +436,11 @@ class GUI_robot_control():
             if event1 == 'Exit' or event1 == '_close1_':    
                 self.window1.Close()
                 break      
-            #print('Button = ', event)      
+
             # ------ Process menu choices ------ #      
             if event1 == 'About...':      
                 sg.Popup('About this program', 'Version 1.0', 'Python rocks...')      
-        #    elif event1 == 'Open':      
-        #        filename = sg.PopupGetFile('file to open', no_window=True)      
-        #        print(filename)
+  
             elif event1 == '_homing_' or event1 == 'Homing': 
                 self.homing()
 
@@ -523,7 +534,7 @@ class GUI_robot_control():
                     pass
                 else:
                     try:
-        #                open_file=open(filename,'r')
+
                         open_list = []
                         open_list = [line.rstrip('\n') for line in open(filename)]
 
@@ -560,14 +571,13 @@ class GUI_robot_control():
 
                         save_file.write(save_list)
                         
-        #                save_file.write('{}'.format(filename))
+
                         save_file.close()
 
                 
             if event1 != sg.TIMEOUT_KEY:
                 pass
-        #        print('Button = ', event1)
-                    #window.Element('_output_').Update(event)
+
         self.window1.Close()
         GPIO.remove_event_detect(self.motor_rotation.counter_pin)
         GPIO.remove_event_detect(self.motor_Y_axis.counter_pin)
