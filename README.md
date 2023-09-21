@@ -17,9 +17,13 @@ For detailed installation instructions and setup diagrams, please refer to the [
 
 ## App screenshots
 
-![Robotic Arm Positioning Screen Screenshot](Assets/screen2.png)
+<img src="../Assets/screen2.png" alt="Robotic Arm Positioning Screen Screenshot" width="800"> 
 
-![Robotic Arm Main Screen Screenshot](Assets/screen1_filled.png)
+**Robotic Arm Positioning Screen Screenshot**
+
+<img src="../Assets/screen1_filled.png" alt="Robotic Arm Positioning Screen Screenshot" width="800"> 
+
+**Robotic Arm Main Screen Screenshot**
 
 ## Dependencies
 
