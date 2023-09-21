@@ -7,8 +7,8 @@ Controlling Fischertechnik robotic arm using Raspberry Pi.
 
 1. Before using the robotic arm, it is necessary to position the robot and save positions/coordinates.
     1. Press the icon ![Positioning icon](../Assets/position_icon.png) to open the interface shown in Figure 2.
-    ![Figure 2](../Assets/screen2.png)
-    **Figure 2. Interface for positioning the robot and saving positions/coordinates of the robotic arm**
+![Figure 2]../(Assets/screen2.png)
+**Figure 2. Interface for positioning the robot and saving positions/coordinates of the robotic arm**
     1. Use the interface and the corresponding buttons/arrows depicted in Figure 3 to bring the robotic arm to the desired position.
         - Blue arrows are used for moving along the X and Y axes and rotating around the Y axis (R coordinates).
         - Red arrows are used for opening and closing the gripper.
@@ -26,8 +26,8 @@ Controlling Fischertechnik robotic arm using Raspberry Pi.
                 b. Transfers all the saved positions and coordinates to the temporary memory.
                 c. Reopens and displays the initial screen, as depicted in Figure 1 (also represented in Figure 3).
 
-    ![Figure 3](../Assets/screen1_filled.png)
-    **Figure 3. Initial screen with instructions for operating the robotic arm**
+![Figure 3](../Assets/screen1_filled.png)
+**Figure 3. Initial screen with instructions for operating the robotic arm**
 
 2. After positioning the robot and saving positions/coordinates, the initial screen is again shown (Figure 3).
 2. After positioning the robot and saving positions/coordinates, the initial screen is again shown (Figure 3).
