@@ -30,6 +30,7 @@ Controlling Fischertechnik robotic arm using Raspberry Pi.
     **Figure 3. Initial screen with instructions for operating the robotic arm**
 
 2. After positioning the robot and saving positions/coordinates, the initial screen is again shown (Figure 3).
+2. After positioning the robot and saving positions/coordinates, the initial screen is again shown (Figure 3).
     - Positions saved in the temporary memory are added to the main screen.
     - From the main screen, positions can be edited or the execution order of instructions/coordinates can be loaded from a previously saved file.
     - To specify the order of instruction/coordinate execution:
