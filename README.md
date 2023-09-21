@@ -1,19 +1,25 @@
 # Robotic Arm Control GUI with Raspberry Pi 3
 
-This Python code generates a Graphical User Interface (GUI) for controlling a robotic arm using a Raspberry Pi 3. The GUI allows users to interact with the robotic arm and perform various movements and actions (2019. project, icons are changed due to the copyright). 
+This Python code generates a Graphical User Interface (GUI) for controlling a Fischertechnik robotic arm using a Raspberry Pi 3. The GUI allows users to interact with the robotic arm, manual position, save, load and run sequential programms (2019. project, icons are changed due to the copyright). 
 
 ## Installation Instructions
 
-For detailed installation instructions and setup diagrams, please refer to the [Installation Manual](docs/installation_manual.md) and [User Guide](docs/user_guide.md).
+For detailed installation instructions and setup diagrams, please refer to the [Installation Manual](Docs/installation_manual.md) and [User Guide](Docs/user_guide.md).
 
 ## Features
 
-- GUI interface for controlling the robotic arm
-- Positioning and saving coordinates for the robotic arm
-- Sequential execution of robotic arm commands
-- Ability to save and load instructions for the robotic arm
-- Homing function to return the robotic arm to its default position
-- Gripper control for opening and closing
+- Graphical User Interface (GUI) to manual operate the robotic arm
+- Positioning and storing of coordinates
+- Sequential programming and running of commands
+- Saving and reloading of instructions
+- Homing function that allows the robotic arm to reset to its 'home' position
+- Gripper manipulation enabling opening and closing actions.
+
+## App screenshots
+
+![Robotic Arm Positioning Screen Screenshot](Assets/screen2.png)
+
+![Robotic Arm Main Screen Screenshot](Assets/screen1_filled.png)
 
 ## Dependencies
 
@@ -35,9 +41,8 @@ For detailed installation instructions and setup diagrams, please refer to the [
 - Install a better driver that allows for speed variation and PWM control.
 - Enhance positioning capabilities for more accurate movement.
 
-For more details and information, please refer to the [User Guide](docs/user_guide.md).
+For more details and information, please refer to the [User Guide](Docs/user_guide.md).
 
-![Robotic Arm GUI Screenshot](screenshots/robotic_arm_gui.png)
 
 Attributes:
 <a href="https://www.flaticon.com/free-icons/baseline" title="baseline icons">Baseline icons created by Arkinasi - Flaticon</a>
