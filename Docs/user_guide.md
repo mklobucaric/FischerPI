@@ -11,7 +11,7 @@ Before using the robotic arm, it is necessary to position the robot and save pos
 <img src="../Assets/screen2.png" alt="Figure 2. Interface for positioning the robot and saving positions/coordinates of the robotic arm" width="550"><br>
 <b>Figure 2. Interface for positioning the robot and saving positions/coordinates of the robotic arm</b>  
 
-1. Use the interface and the corresponding buttons/arrows depicted in Figure 3 to bring the robotic arm   
+1. Use the interface and the corresponding buttons/arrows depicted in Figure 3. to bring the robotic arm   
 to the desired position.
     - Blue arrows are used for moving along the X and Y axes and rotating around the Y axis (R coordinates).
     - Red arrows are used for opening and closing the gripper.
@@ -35,7 +35,7 @@ to the desired position.
 <img src="../Assets/screen1_filled.png" alt="Figure 3. Initial screen with instructions for operating the robotic arm" width="550"><br>
 <b>Figure 3. Initial screen with instructions for operating the robotic armg</b>  
 
-2. After positioning the robot and saving positions/coordinates, the initial screen is again shown (Figure 3).
+2. After positioning the robot and saving positions/coordinates, the initial screen is shown again (Figure 3).
     - Positions saved in the temporary memory are added to the main screen.
     - From the main screen, positions can be edited or the execution order of instructions/coordinates can be  
     loaded from a previously saved file.

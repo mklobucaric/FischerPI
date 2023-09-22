@@ -1,7 +1,7 @@
 # Installation Manual
 
-The subject of these installation instructions is a Fischertechnik robotic arm (Picture 1.),  
-controlled via Raspberry PI 3b+ (RPI) (Picture 2.).
+The subject of these installation instructions is a Fischertechnik robotic arm (Figure 1.),  
+controlled via Raspberry PI 3b+ (RPI) (Figure 2.).
 
 <img src="../Assets/figure1.png" alt="Figure 1. Fischertechnik robotic arm" width="650"><br>
 <b>Figure 1. Fischertechnik robotic arm</b>
@@ -30,7 +30,7 @@ stopping of the robotic arm.
 
 The control of the robotic arm is done with the digital GPIO pins of RPI through the expansion   
 board. The expansion board allows for easier wiring needed for controlling the robotic arm.   
-Figure 5 shows the pin layout on the GPIO board, as well as the corresponding connection points   
+Figure 5. shows the pin layout on the GPIO board, as well as the corresponding connection points   
 on the expansion board.
 
 <img src="../Assets/figure5.png" alt="Figure 5. GPIO pin layout on RPI board with corresponding connection points on the expansion board" width="650"><br>
@@ -97,12 +97,6 @@ Python package installation:
 - RPi.GPIO 0.7.0
 
 Running the Python application in the command window:
-1. Navigate to the directory with Python scripts using the cd command
-2. Run "python3 Robotics_final.py"
+1. Navigate to the directory with Python scripts using the `cd` command
+2. Run `python3 Robotics_final.py`
 
-ToDo:
-- Update the application
-- Flutter application for control from mobile or tablet devices
-- Better driver that allows for speed variation, i.e., PWM control
-- Better positioning in predetermined coordinates, currently the error caused by inertia   
-is compensated for in software, actual and desired position.

@@ -1,6 +1,6 @@
 # Robotic Arm Control GUI with Raspberry Pi 3
 
-This Python code generates a Graphical User Interface (GUI) for controlling a Fischertechnik robotic arm using a Raspberry Pi 3. The GUI allows users to interact with the robotic arm, manual position, save, load and run sequential programms (2019. project, icons are changed due to the copyright). 
+This Python code repository contains scripts for a user-friendly Graphical Interface (GUI) that facilitates the command of a Fischertechnik robotic arm via a Raspberry Pi 3. Users can interactively control, reposition and manipulate the robotic arm through this GUI. Additional features include the ability to save, load, and execute sequential programs. Please note, this was a project carried out in 2019 and certain icons have been modified due to the copyright.
 
 ## Installation Instructions
 
@@ -8,12 +8,12 @@ For detailed installation instructions and setup diagrams, please refer to the [
 
 ## Features
 
-- Graphical User Interface (GUI) to manually operate the robotic arm
-- Positioning and storing of coordinates
-- Sequential programming and running of commands
-- Saving and reloading of instructions
-- Homing function that allows the robotic arm to reset to its 'home' position
-- Gripper manipulation enabling opening and closing actions.
+- Graphical User Interface (GUI) for manual control over the robotic arm
+- Mapping and saving coordinates - allows operators to mark and store key positions required for specific tasks
+- Sequential programming and execution
+- Instruction saving and reloading
+- Homing function - functionality enables the arm to auto-calibrate by returning and resetting to its 'home' or default position
+- Gripper manipulation - versatile control over the gripper enabling variety of opening and closing actions.
 
 ## App screenshots
 
@@ -43,8 +43,6 @@ For detailed installation instructions and setup diagrams, please refer to the [
 - Develop a Flutter application for control from mobile or tablet devices.
 - Install a better driver that allows for speed variation and PWM control.
 - Enhance positioning capabilities for more accurate movement.
-
-For more details and information, please refer to the [User Guide](Docs/user_guide.md).
 
 
 Attributes:
