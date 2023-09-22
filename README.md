@@ -8,7 +8,7 @@ For detailed installation instructions and setup diagrams, please refer to the [
 
 ## Features
 
-- Graphical User Interface (GUI) to manual operate the robotic arm
+- Graphical User Interface (GUI) to manually operate the robotic arm
 - Positioning and storing of coordinates
 - Sequential programming and running of commands
 - Saving and reloading of instructions
@@ -17,13 +17,12 @@ For detailed installation instructions and setup diagrams, please refer to the [
 
 ## App screenshots
 
-<img src="../Assets/screen2.png" alt="Robotic Arm Positioning Screen Screenshot" width="800"> 
+<img src="Assets/screen2.png" alt="Robotic Arm Positioning Screen Screenshot" width="550"><br>
+<b>Robotic Arm Positioning Screen Screenshot</b>
 
-**Robotic Arm Positioning Screen Screenshot**
 
-<img src="../Assets/screen1_filled.png" alt="Robotic Arm Positioning Screen Screenshot" width="800"> 
-
-**Robotic Arm Main Screen Screenshot**
+<img src="Assets/screen1_filled.png" alt="Robotic Arm Positioning Screen Screenshot" width="550"><br>
+<strong>Robotic Arm Main Screen Screenshot</strong>
 
 ## Dependencies
 

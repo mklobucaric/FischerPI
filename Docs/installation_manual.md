@@ -1,27 +1,41 @@
 # Installation Manual
 
-The subject of these installation instructions is a Fischertechnik robotic arm (Picture 1.), controlled via Raspberry PI 3b+ (RPI) (Picture 2.).
+The subject of these installation instructions is a Fischertechnik robotic arm (Picture 1.),  
+controlled via Raspberry PI 3b+ (RPI) (Picture 2.).
 
-![Figure 1. Fischertechnik robotic arm](../Assets/figure1.png)  
-**Figure 1. Fischertechnik robotic arm**
+<img src="../Assets/figure1.png" alt="Figure 1. Fischertechnik robotic arm" width="650"><br>
+<b>Figure 1. Fischertechnik robotic arm</b>
 
-![Figure 2. Raspberry Pi 3b+ with expansion board](../Assets/figure2.png)  
-**Figure 2. Raspberry Pi 3b+ with expansion board**
+<img src="../Assets/figure2.png" alt="Figure 2. Raspberry Pi 3b+ with expansion board" width="650"><br>
+<b>Figure 2. Raspberry Pi 3b+ with expansion board</b>
 
-The robotic arm, RPI, power supplies, expansion board, and driver/H-bridge are connected according to the scheme in Figure 3. The 9V power supply is used to power the DC motors of the robotic arm through the driver/H-bridge. The control of the robotic arm is done with the RPI, through the expansion board. RPI has its own power supply of 5V. GPIO pins accept voltages of 3.3V.
+The robotic arm, RPI, power supplies, expansion board, and driver/H-bridge are connected   
+according to the scheme in Figure 3. The 9V power supply is used to power the DC motors of   
+the robotic arm through the driver/H-bridge. The control of the robotic arm is done with   
+the RPI, through the expansion board. RPI has its own power supply of 5V. GPIO pins accept   
+voltages of 3.3V.
 
-![Figure 3. Connection scheme for power supply, RPI, expansion board, driver/H-bridge, and robotic arm](../Assets/figure3.png)  
-**Figure 3. Connection scheme for power supply, RPI, expansion board, driver/H-bridge, and robotic arm**
+<img src="../Assets/figure3.png" alt="Figure 3. Connection scheme for power supply, RPI, expansion board, driver/H-bridge, and robotic arm" width="650"><br>
+<b>Figure 3. Connection scheme for power supply, RPI, expansion board, driver/H-bridge,     
+and robotic arm</b>
 
-Figure 4. shows the motors of the robotic arm with pulse counting buttons for position detection on each axis, and limit switches for positioning at the end position of each axis. Motor A and motor B have built-in incremental encoders and do not require additional pulse counters. The device is also equipped with an emergency stop button for immediate stopping of the robotic arm.
+Figure 4. shows the motors of the robotic arm with pulse counting buttons for position   
+detection on each axis, and limit switches for positioning at the end position of each   
+axis. Motor A and motor B have built-in incremental encoders and do not require additional   
+pulse counters. The device is also equipped with an emergency stop button for immediate   
+stopping of the robotic arm.
 
-![Figure 4. Robotic arm with DC motors, pulse counting buttons, and limit switches](../Assets/figure4.png)  
-**Figure 4. Robotic arm with DC motors, pulse counting buttons, and limit switches**
+<img src="../Assets/figure4.png" alt="Figure 4. Robotic arm with DC motors, pulse counting buttons, and limit switches" width="650"><br>
+<b>Figure 4. Robotic arm with DC motors, pulse counting buttons, and limit switches</b>
 
-The control of the robotic arm is done with the digital GPIO pins of RPI through the expansion board. The expansion board allows for easier wiring needed for controlling the robotic arm. Figure 5 shows the pin layout on the GPIO board, as well as the corresponding connection points on the expansion board.
+The control of the robotic arm is done with the digital GPIO pins of RPI through the expansion   
+board. The expansion board allows for easier wiring needed for controlling the robotic arm.   
+Figure 5 shows the pin layout on the GPIO board, as well as the corresponding connection points   
+on the expansion board.
 
-![Figure 5. GPIO pin layout on RPI board with corresponding connection points on the expansion board](../Assets/figure5.png)  
-**Figure 5. GPIO pin layout on RPI board with corresponding connection points on the expansion board**
+<img src="../Assets/figure5.png" alt="Figure 5. GPIO pin layout on RPI board with corresponding connection points on the expansion board" width="650"><br>
+<b>Figure 5. GPIO pin layout on RPI board with corresponding connection points on   
+the expansion board</b>
 
 The control of the robotic arm is done through the driver/H-bridge as follows:
 - Motor A (channel A on the driver) - robot rotation
@@ -39,8 +53,8 @@ Connections between the driver/H-bridge and RPI (Figure 6.):
 - D1 - GPIO8 - CE0
 - D2 - GPIO9 - MISO
 
-![Figure 6. Connection of motors and RPI to the driver/H-bridge](../Assets/figure6.png)  
-**Figure 6. Connection of motors and RPI to the driver/H-bridge**
+<img src="../Assets/figure6.png" alt="Figure 6. Connection of motors and RPI to the driver/H-bridge" width="650"><br>
+<b>Figure 6. Connection of motors and RPI to the driver/H-bridge</b>
 
 The incremental encoders on motors A and B are connected as follows (Figure 7.):
 - Software-activated internal pull-up resistors
@@ -51,12 +65,14 @@ The incremental encoders on motors A and B are connected as follows (Figure 7.):
 - Encoder2:
   - Black wire - GPIO14 - TXD
 
-![Figure 7. Connection of incremental encoders and pulse counting buttons](../Assets/figure7.png)  
-**Figure 7. Connection of incremental encoders and pulse counting buttons**
+<img src="../Assets/figure7.png" alt="Figure 7. Connection of incremental encoders and pulse counting buttons" width="650"><br>
+<b>Figure 7. Connection of incremental encoders and pulse counting buttons</b>
 
-The pulse counting buttons and emergency stop button are connected as normally open (NO) buttons. Individual buttons are connected as follows:
-- Software-activated internal pull-down resistors
-- Middle contact on each button is connected to 3.3V (Figure 7.)
+The pulse counting buttons and emergency stop button are connected as normally open   
+(NO) buttons.   
+Individual buttons are connected as follows:  
+- Software-activated internal pull-down resistors  
+- Middle contact on each button is connected to 3.3V (Figure 7.)  
 - Green wires are connected to GPIO pins
 - Limit switch 1:
   - GPIO12 - PWM0
@@ -88,4 +104,5 @@ ToDo:
 - Update the application
 - Flutter application for control from mobile or tablet devices
 - Better driver that allows for speed variation, i.e., PWM control
-- Better positioning in predetermined coordinates, currently the error caused by inertia is compensated for in software, actual and desired position.
+- Better positioning in predetermined coordinates, currently the error caused by inertia   
+is compensated for in software, actual and desired position.
